@@ -151,6 +151,7 @@ def main():
                     key = (style_code, color_desc)
                     if key in color_map:
                         color_code = color_map[key]
+                        # 款色图此处加了后缀_IMAGEURL.jpg 请根据你的需要修改
                         save_name = f"{style_code}_{color_code}_IMAGEURL.jpg"
                         save_path = os.path.join(output_dir_color, save_name)
                         if os.path.exists(save_path):
